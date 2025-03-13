@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            grid-template-areas:
+            "header header header"
+            "sidebar main main"
+            "footer footer footer" ;
+        }
+        header{
+            background-color: darkblue;
+            grid-area: header;
+            margin-bottom: 10px;
+        }
+        footer{
+            background-color: blue;
+            grid-area: footer;
+        }
+        main{
+            background-color: yellow;
+            grid-area: main; 
+        }
+        .sidebar{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <div class="sidebar">sidebar</div>
+    <main>
+        <h1>Danh sách sản phẩm</h1>
+        <div class="product-list">
+            <div class="product-item">1</div>
+            <div class="product-item">2</div>
+            <div class="product-item">3</div>
+            <div class="product-item">4</div>
+            <div class="product-item">5</div>
+        </div>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
